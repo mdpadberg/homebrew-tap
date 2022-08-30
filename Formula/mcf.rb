@@ -30,5 +30,14 @@ class Mcf < Formula
 
     def install
       bin.install "mcf"
+      
+      bash_output = Utils.safe_popen_read(bin/"mcf", "completion", "bash")
+      (bash_completion/"mcf").write bash_output
+
+      zsh_output = Utils.safe_popen_read(bin/"mcf", "completion", "zsh")
+      (zsh_completion/"_mcf").write zsh_output
+
+      fish_output = Utils.safe_popen_read(bin/"mcf", "completion", "fish")
+      (fish_completion/"mcf.fish").write fish_output
     end
   end
