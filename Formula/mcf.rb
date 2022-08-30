@@ -5,32 +5,32 @@ class Mcf < Formula
   
     on_macos do
         if Hardware::CPU.intel?
-            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.3.0/mcf-v0.3.0-x86_64-apple-darwin.tar.gz"
-            sha256 "ad4ab9b1be7c030a8aab7fe85e07ce7990e68ada03f8e929e846199ec758f131"
+            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.4.0/mcf-v0.4.0-x86_64-apple-darwin.tar.gz"
+            sha256 "f6451fa0230e2c5a3a07b7565d8096590025d7aa5b049023b74333acbeb491db"
         end
         if Hardware::CPU.arm?
-            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.3.0/mcf-v0.3.0-x86_64-apple-darwin.tar.gz"
-            sha256 "ad4ab9b1be7c030a8aab7fe85e07ce7990e68ada03f8e929e846199ec758f131"
+            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.4.0/mcf-v0.4.0-x86_64-apple-darwin.tar.gz"
+            sha256 "f6451fa0230e2c5a3a07b7565d8096590025d7aa5b049023b74333acbeb491db"
         end
     end
     on_linux do 
         if Hardware::CPU.arm?
-            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.3.0/mcf-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-            sha256 "0d1ece5f1f2e60822f6110045c0821c1af8da0eb64234339f0d8e04030a37263"
+            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.4.0/mcf-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+            sha256 "061b8d25962db6a8d0017dd90c95f5668c0745384d521c684320c74a3d1edc18"
         end
         if Hardware::CPU.is_64_bit?
-            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.3.0/mcf-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-            sha256 "0d1ece5f1f2e60822f6110045c0821c1af8da0eb64234339f0d8e04030a37263"
+            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.4.0/mcf-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+            sha256 "061b8d25962db6a8d0017dd90c95f5668c0745384d521c684320c74a3d1edc18"
         end
         if Hardware::CPU.intel?
-            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.3.0/mcf-v0.3.0-x86_64-unknown-linux-gnu.tar.gz"
-            sha256 "0d1ece5f1f2e60822f6110045c0821c1af8da0eb64234339f0d8e04030a37263"
+            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.4.0/mcf-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+            sha256 "061b8d25962db6a8d0017dd90c95f5668c0745384d521c684320c74a3d1edc18"
         end
     end
 
     def install
       bin.install "mcf"
-      
+
       bash_output = Utils.safe_popen_read(bin/"mcf", "completion", "bash")
       (bash_completion/"mcf").write bash_output
 
