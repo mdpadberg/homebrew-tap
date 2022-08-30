@@ -9,8 +9,8 @@ class Mcf < Formula
             sha256 "f6451fa0230e2c5a3a07b7565d8096590025d7aa5b049023b74333acbeb491db"
         end
         if Hardware::CPU.arm?
-            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.4.0/mcf-v0.4.0-x86_64-apple-darwin.tar.gz"
-            sha256 "f6451fa0230e2c5a3a07b7565d8096590025d7aa5b049023b74333acbeb491db"
+            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.4.0/mcf-v0.4.0-aarch64-apple-darwin.tar.gz"
+            sha256 "0e1a0ba4c847b022a6dc6c0a5333f95133c837288d826043010f67bd4c4ac757"
         end
     end
     on_linux do 
