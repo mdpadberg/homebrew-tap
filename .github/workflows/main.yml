@@ -26,8 +26,8 @@ jobs:
       shell: bash
       run: cp scripts/target/release/mcf scripts/binaries 
     - name: Commit create-mcf-formula binary
-        run: |
-          git config --global user.name 'Github main action'
-          git config --global user.email 'none@github.com'
-          git commit -am "Commit new create-mcf-formula binary"
-          git push 
+      run: |
+        git config --global user.name 'Github main action'
+        git config --global user.email 'none@github.com'
+        git commit -am "Commit new create-mcf-formula binary"
+        git push 
