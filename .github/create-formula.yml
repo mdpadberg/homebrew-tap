@@ -1,0 +1,12 @@
+name: create-formula
+
+jobs:
+  create-formula:
+    name: create-mcf-formula binary
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout project
+      uses: actions/checkout@v2
+    - name: Generate mcf formula for brew
+      shell: bash
+      run: chmod +x scripts/binaries/mcf && ./scripts/binaries/mcf
