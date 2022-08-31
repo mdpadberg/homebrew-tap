@@ -1,0 +1,33 @@
+name: main
+
+on:
+  push:
+    branches: 
+      - main
+    paths:
+      - 'scripts/src/**'
+
+jobs:
+  create_binaries:
+    name: create-mcf-formula binary
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout project
+      uses: actions/checkout@v2
+    - name: Install Rust with cargo
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: stable
+        target: x86_64-unknown-linux-gnu
+    - name: Build
+      working-directory: scripts
+      run: cargo build --bin create-mcf-formula --release --target x86_64-unknown-linux-gnu
+    - name: Copy create-mcf-formula binary to binaries folder
+      shell: bash
+      run: cp scripts/target/release/mcf scripts/binaries 
+    - name: Commit create-mcf-formula binary
+        run: |
+          git config --global user.name 'Github main action'
+          git config --global user.email 'none@github.com'
+          git commit -am "Commit new create-mcf-formula binary"
+          git push 
