@@ -19,7 +19,7 @@ jobs:
         target: x86_64-unknown-linux-gnu
     - name: Build
       working-directory: scripts
-      run: cargo build --bin create-mcf-formula --release --target x86_64-unknown-linux-gnu
+      run: cargo build --bin create-mcf-formula --release
     - name: Copy create-mcf-formula binary to binaries folder
       shell: bash
       run: cp scripts/target/release/create-mcf-formula scripts/binaries 
