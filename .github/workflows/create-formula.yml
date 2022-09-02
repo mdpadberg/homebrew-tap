@@ -11,4 +11,11 @@ jobs:
       uses: actions/checkout@v2
     - name: Generate mcf formula for brew
       shell: bash
-      run: chmod +x scripts/binaries/create-mcf-formula && ./scripts/binaries/create-mcf-formula
+      run: chmod +x scripts/binaries/create-mcf-formula && ./scripts/binaries/create-mcf-formula > Formula/mcf.rb
+    - name: Commit create-mcf-formula binary
+      run: |
+        git config --global user.name 'Github main action'
+        git config --global user.email 'none@github.com'
+        git add Formula/mcf.rb
+        git commit -m "Commit new brew formula"
+        git push 
