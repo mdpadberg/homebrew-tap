@@ -22,7 +22,7 @@ jobs:
       run: cargo build --bin create-mcf-formula --release --target x86_64-unknown-linux-gnu
     - name: Copy create-mcf-formula binary to binaries folder
       shell: bash
-      run: cp scripts/target/release/mcf scripts/binaries 
+      run: cp scripts/target/release/create-mcf-formula scripts/binaries 
     - name: Commit create-mcf-formula binary
       run: |
         git config --global user.name 'Github main action'
