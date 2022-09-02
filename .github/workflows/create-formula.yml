@@ -11,4 +11,4 @@ jobs:
       uses: actions/checkout@v2
     - name: Generate mcf formula for brew
       shell: bash
-      run: chmod +x scripts/binaries/mcf && ./scripts/binaries/mcf
+      run: chmod +x scripts/binaries/create-mcf-formula && ./scripts/binaries/create-mcf-formula
