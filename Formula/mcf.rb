@@ -1,5 +1,6 @@
+
 class Mcf < Formula
-    version '0.10.0'
+    version 'v0.4.0'
     desc "Login to multiple cloudfoundry environment."
     homepage "https://github.com/mdpadberg/multi-cf"
   
@@ -41,3 +42,4 @@ class Mcf < Formula
       (fish_completion/"mcf.fish").write fish_output
     end
   end
+
