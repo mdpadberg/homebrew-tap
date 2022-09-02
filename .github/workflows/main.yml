@@ -27,5 +27,6 @@ jobs:
       run: |
         git config --global user.name 'Github main action'
         git config --global user.email 'none@github.com'
-        git commit -am "Commit new create-mcf-formula binary"
+        git add scripts/binaries/create-mcf-formula
+        git commit -m "Commit new create-mcf-formula binary"
         git push 
