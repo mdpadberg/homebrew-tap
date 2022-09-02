@@ -1,31 +1,31 @@
 
 class Mcf < Formula
-    version 'v0.11.0'
+    version '0.12.1'
     desc "Login to multiple cloudfoundry environment."
     homepage "https://github.com/mdpadberg/multi-cf"
   
     on_macos do
         if Hardware::CPU.intel?
-            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.11.0/mcf-v0.11.0-x86_64-apple-darwin.tar.gz"
-            sha256 "30fc746de1c190ccbc7f353eb2ad608d96640da614c28c74054dcc7406a62fdb"
+            url "https://github.com/mdpadberg/multi-cf/releases/download/0.12.1/mcf-0.12.1-x86_64-apple-darwin.tar.gz"
+            sha256 "ae53e6fb3657f732dc657d164eec7f025cdac758457314775f06c288a0954671"
         end
         if Hardware::CPU.arm?
-            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.11.0/mcf-v0.11.0-aarch64-apple-darwin.tar.gz"
-            sha256 "a549a267f7eebd0430b852df6a83521a5640a8c4071af1fadd3e3fa03590baa5"
+            url "https://github.com/mdpadberg/multi-cf/releases/download/0.12.1/mcf-0.12.1-aarch64-apple-darwin.tar.gz"
+            sha256 "357ed9125287ba02616557292891d36b569ecada7bc1f0ef075eb0ef39f37c71"
         end
     end
     on_linux do 
         if Hardware::CPU.arm?
-            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.11.0/mcf-v0.11.0-x86_64-unknown-linux-gnu.tar.gz"
-            sha256 "0c79e7e715f0d5b4155feb1fe79a4f1fb8947443a1e967c3d1d44b0f20028528"
+            url "https://github.com/mdpadberg/multi-cf/releases/download/0.12.1/mcf-0.12.1-x86_64-unknown-linux-gnu.tar.gz"
+            sha256 "a827e633427476efc72fa1a39c567282d779aedd93c6bd27ebc4212f6492164b"
         end
         if Hardware::CPU.is_64_bit?
-            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.11.0/mcf-v0.11.0-x86_64-unknown-linux-gnu.tar.gz"
-            sha256 "0c79e7e715f0d5b4155feb1fe79a4f1fb8947443a1e967c3d1d44b0f20028528"
+            url "https://github.com/mdpadberg/multi-cf/releases/download/0.12.1/mcf-0.12.1-x86_64-unknown-linux-gnu.tar.gz"
+            sha256 "a827e633427476efc72fa1a39c567282d779aedd93c6bd27ebc4212f6492164b"
         end
         if Hardware::CPU.intel?
-            url "https://github.com/mdpadberg/multi-cf/releases/download/v0.11.0/mcf-v0.11.0-x86_64-unknown-linux-gnu.tar.gz"
-            sha256 "0c79e7e715f0d5b4155feb1fe79a4f1fb8947443a1e967c3d1d44b0f20028528"
+            url "https://github.com/mdpadberg/multi-cf/releases/download/0.12.1/mcf-0.12.1-x86_64-unknown-linux-gnu.tar.gz"
+            sha256 "a827e633427476efc72fa1a39c567282d779aedd93c6bd27ebc4212f6492164b"
         end
     end
 
