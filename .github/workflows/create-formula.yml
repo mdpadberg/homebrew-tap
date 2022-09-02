@@ -1,5 +1,7 @@
 name: create-formula
 
+on: [workflow_dispatch]
+
 jobs:
   create-formula:
     name: create-mcf-formula binary
