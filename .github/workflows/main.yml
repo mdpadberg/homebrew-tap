@@ -19,6 +19,7 @@ jobs:
         target: x86_64-unknown-linux-gnu
     - name: Build scripts in bin folder
       working-directory: scripts
+      shell: bash
       run: |
         for file in src/bin/*.rs; do
           prefix='src/bin/'
