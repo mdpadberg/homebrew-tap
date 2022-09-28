@@ -19,13 +19,12 @@ jobs:
         target: x86_64-unknown-linux-gnu
     - name: Build scripts in bin folder
       working-directory: scripts
-      shell: bash
       run: |
         for file in src/bin/*.rs; do
           prefix='src/bin/'
           suffix='.rs'
           file=${file/#$prefix}
-	        cargo build --bin ${file/%$suffix} --release
+          cargo build --bin ${file/%$suffix} --release
         done
     - name: Copy binaries to binaries folder
       shell: bash
