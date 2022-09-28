@@ -4,6 +4,7 @@ use tinytemplate::TinyTemplate;
 use reqwest::header::USER_AGENT;
 use sha256::digest_bytes;
 
+
 static TEMPLATE: &str = r#"
 class Mcf < Formula
     version '{version}'
