@@ -28,6 +28,7 @@ jobs:
         done
     - name: Copy binaries to binaries folder
       shell: bash
+      continue-on-error: true
       run: |
         rm scripts/target/release/*.d
         cp scripts/target/release/* scripts/binaries
