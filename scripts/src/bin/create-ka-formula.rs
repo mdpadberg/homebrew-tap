@@ -6,7 +6,7 @@ use sha256::digest_bytes;
 
 
 static TEMPLATE: &str = r#"
-class KeepAwake < Formula
+class Ka < Formula
     version '{version}'
     desc "Keep you machine awake."
     homepage "https://github.com/mdpadberg/keep-awake"

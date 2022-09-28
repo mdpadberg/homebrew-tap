@@ -1,5 +1,5 @@
 
-class KeepAwake < Formula
+class Ka < Formula
     version '0.5.0'
     desc "Keep you machine awake."
     homepage "https://github.com/mdpadberg/keep-awake"
