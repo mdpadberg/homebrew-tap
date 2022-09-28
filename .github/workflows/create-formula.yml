@@ -20,5 +20,6 @@ jobs:
         git config --global user.name 'Github create-formula action'
         git config --global user.email '43384430+mdpadberg@users.noreply.github.com'
         git add Formula/mcf.rb
+        git add Formula/keep-awake.rb
         git commit -m "Commit new brew formula"
         git push 
