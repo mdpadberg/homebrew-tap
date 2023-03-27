@@ -1,7 +1,7 @@
 # Formulas for homebrew
 This repo contains ruby files for [brew.sh](https://brew.sh/).
 
-## To generate the json files
+## To generate the ruby files
 For example, to generate a ruby file for my multi-cf project:
 ```cargo run --bin mcf```
 
