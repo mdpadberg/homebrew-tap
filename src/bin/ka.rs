@@ -6,7 +6,6 @@ use tera::{Context, Tera};
 
 #[macro_use]
 extern crate lazy_static;
-
 lazy_static! {
     pub static ref TEMPLATE: Tera = {
         match Tera::new("templates/*.rb") {
