@@ -1,4 +1,4 @@
-class Mcf < Formula
+class Ka < Formula
     version '0.7.1'
     desc "Keep you machine awake."
     homepage "https://github.com/mdpadberg/keep-awake"
