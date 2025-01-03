@@ -1,30 +1,30 @@
 class Ka < Formula
-    version '1.0.1'
+    version '1.0.2'
     desc "Keep you machine awake."
     homepage "https://github.com/mdpadberg/keep-awake"
   
     on_macos do
         if Hardware::CPU.intel?
-            url "https://github.com/mdpadberg/keep-awake/releases/download/1.0.1/ka-1.0.1-x86_64-apple-darwin.tar.gz"
-            sha256 "9a4219e1078905b63c7f2c3a0294c7b44356eb79d448f7ad67252d7f7404e571"
+            url "https://github.com/mdpadberg/keep-awake/releases/download/1.0.2/ka-1.0.2-x86_64-apple-darwin.tar.gz"
+            sha256 "efe42720447eea8fa47d24688e816c1d1d8259afdf6fbe12473e0073e586162e"
         end
         if Hardware::CPU.arm?
-            url "https://github.com/mdpadberg/keep-awake/releases/download/1.0.1/ka-1.0.1-aarch64-apple-darwin.tar.gz"
-            sha256 "92ff26177e3b251c058fc501d6eb47ef03ba23ca113da976bfde8a7818c43f9c"
+            url "https://github.com/mdpadberg/keep-awake/releases/download/1.0.2/ka-1.0.2-aarch64-apple-darwin.tar.gz"
+            sha256 "6ae9fef6ebe13d8545d37cf3ffdfd3d97769050ac1a82417fbbffee1f4e6bf48"
         end
     end
     on_linux do 
         if Hardware::CPU.arm?
-            url "https://github.com/mdpadberg/keep-awake/releases/download/1.0.1/ka-1.0.1-x86_64-unknown-linux-gnu.tar.gz"
-            sha256 "5a76b2d6bf1f576c8aed62709a3875bb835f7dda111cd9ca39ec62d0219a5241"
+            url "https://github.com/mdpadberg/keep-awake/releases/download/1.0.2/ka-1.0.2-x86_64-unknown-linux-gnu.tar.gz"
+            sha256 "7aed9da046e482df9ed519fe4119ff0e77314432274edbaf0af0fc839405a5d0"
         end
         if Hardware::CPU.is_64_bit?
-            url "https://github.com/mdpadberg/keep-awake/releases/download/1.0.1/ka-1.0.1-x86_64-unknown-linux-gnu.tar.gz"
-            sha256 "5a76b2d6bf1f576c8aed62709a3875bb835f7dda111cd9ca39ec62d0219a5241"
+            url "https://github.com/mdpadberg/keep-awake/releases/download/1.0.2/ka-1.0.2-x86_64-unknown-linux-gnu.tar.gz"
+            sha256 "7aed9da046e482df9ed519fe4119ff0e77314432274edbaf0af0fc839405a5d0"
         end
         if Hardware::CPU.intel?
-            url "https://github.com/mdpadberg/keep-awake/releases/download/1.0.1/ka-1.0.1-x86_64-unknown-linux-gnu.tar.gz"
-            sha256 "5a76b2d6bf1f576c8aed62709a3875bb835f7dda111cd9ca39ec62d0219a5241"
+            url "https://github.com/mdpadberg/keep-awake/releases/download/1.0.2/ka-1.0.2-x86_64-unknown-linux-gnu.tar.gz"
+            sha256 "7aed9da046e482df9ed519fe4119ff0e77314432274edbaf0af0fc839405a5d0"
         end
     end
 
